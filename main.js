@@ -21,7 +21,7 @@ form.addEventListener('submit', handleForm);
 
 
 const estadoNutricion = (peso) =>{
-    if(peso>50){
+    if(peso>12){
         return "adecuado";
     }
     else{
