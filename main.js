@@ -1,6 +1,6 @@
 buttonSend = document.getElementById("send");
 info = document.getElementById("results"); 
-section = document.getElementsByClassName("d-none");
+section = document.getElementById("info");
 form = document.getElementById("form")
 
 buttonSend.addEventListener("click", () =>{
@@ -13,7 +13,7 @@ buttonSend.addEventListener("click", () =>{
     info.innerHTML += '<h4>Su peso es: ' + peso + '</h4>';
     info.innerHTML += '<h4>Su talla es: ' + talla + '</h4>';
     info.innerHTML += '<h4>Su estado de nutricion está ' + estadoNutricion(peso) + '</h4>';
-    section[0].className = ""
+    section.className = ""
 })
 
 function handleForm(event) { event.preventDefault(); } 
