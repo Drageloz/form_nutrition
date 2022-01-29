@@ -1,0 +1,23 @@
+.main_section{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.main_form{
+    display: grid;
+    width: 400px;
+    margin: auto;
+}
+
+.main_form input{
+    margin:10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.d-none{
+    display: none;
+}

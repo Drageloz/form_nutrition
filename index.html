@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="main_section">
+            <hgroup>
+                <h1>Por favor ingrese los datos</h1>
+            </hgroup>
+            <form id="form" class="main_form">
+                <label>Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese el nombre">
+                <label>Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingrese el apellido">
+                <label>Peso</label>
+                <input type="number" name="peso" placeholder="Ingrese su peso en kilogramos">
+                <label>Talla</label>
+                <input type="number" name="talla" placeholder="Ingrese su talla">
+                <input id="send" type="submit" value="Enviar" >
+            </form>
+        </section>
+
+        <section class="d-none">
+            <hgroup id="results">
+            </hgroup>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
