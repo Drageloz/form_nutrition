@@ -1,9 +1,10 @@
 buttonSend = document.getElementById("send");
 info = document.getElementById("results"); 
 section = document.getElementsByClassName("d-none");
+form = document.getElementById("form")
 
 buttonSend.addEventListener("click", () =>{
-    formData = new FormData(document.getElementById("form"));
+    formData = new FormData(form);
     nombre = formData.get("nombre");
     apellido = formData.get("apellido");
     peso =  formData.get("peso");
@@ -14,6 +15,9 @@ buttonSend.addEventListener("click", () =>{
     info.innerHTML += '<h4>Su estado de nutricion está ' + estadoNutricion(peso) + '</h4>';
     section[0].className = ""
 })
+
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
 
 
 const estadoNutricion = (peso) =>{
